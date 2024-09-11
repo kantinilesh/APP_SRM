@@ -16,12 +16,17 @@ class add {
         c = a + b;
         System.out.println("Addition is" + c);
     }
-}
 
-public static void main(String args[])
-{
-    int m,n;
-    Scanner sc=new Scanner(System.in);
-    System.out.pritln("Eneter first number");
 
+    public static void main(String args[]) {
+        int m, n;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Eneter first number");
+        m = sc.nextInt();
+        System.out.println("Enter second number");
+        n = sc.nextInt();
+        add aa = new add(m, n);
+        aa.output();
+
+    }
 }
